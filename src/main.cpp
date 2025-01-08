@@ -102,6 +102,7 @@ void setup()
   Serial.println("Initializing...");
   pinMode(data_pin, INPUT);
   pinMode(clock_pin, INPUT);
+  pinMode(sync_pin, INPUT_PULLUP);
   digitalWrite(clock_pin, HIGH);
 
   sendData(LED_INIT, 50);
